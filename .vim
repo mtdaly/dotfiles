@@ -1,1 +1,0 @@
-/h/mdaly04/.vim
