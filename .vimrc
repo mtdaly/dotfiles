@@ -43,9 +43,8 @@ Plugin 'vim-syntastic/syntastic'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
@@ -53,20 +52,18 @@ let g:syntastic_python_checker = ['flake8']
 
 Plugin 'nvie/vim-flake8'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'sjl/badwolf'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 let g:airline_powerline_fonts = 1
-if !exists('g:airline_symbols')
-          let g:airline_symbols = {}
-endif
-let g:airline_symbols.space = "\ua0"
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline_theme = 'solarized'
 Plugin 'tpope/vim-fugitive'
 Plugin 'heavenshell/vim-pydocstring'
+Plugin 'Valloric/YouCompleteMe'
 
 " Formatting
 au BufNewFile,BufRead *.py
@@ -92,6 +89,18 @@ set background=dark
 colorscheme solarized
 
 set nu
+set cursorline
+set wildmenu
+set lazyredraw
+set showmatch
+set showcmd
+set incsearch
+set hlsearch
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk
+inoremap jk <esc>
+
 let python_highlight_all=1
 syntax on
 set laststatus=2
