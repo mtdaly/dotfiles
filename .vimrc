@@ -100,6 +100,10 @@ set hlsearch
 nnoremap j gj
 nnoremap k gk
 inoremap jk <esc>
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
 
 let python_highlight_all=1
 syntax on
