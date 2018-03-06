@@ -82,6 +82,15 @@ set encoding=utf-8
 
 set tabstop=8 softtabstop=4 expandtab shiftwidth=4 smarttab
 
+" Latex settings
+filetype plugin on
+filetype indent on
+
+" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+" The following changes the default filetype back to 'tex':
+let g:tex_flavor='latex'
+
 " Color Settings
 set background=dark
 colorscheme solarized
