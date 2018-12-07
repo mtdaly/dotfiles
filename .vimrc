@@ -37,7 +37,7 @@ set foldlevel=99
 nnoremap <space> za
 
 " Plugins
-Plugin 'tmhedberg/SimpylFold'
+Plugin 'tmhedberg/SimplyFold'
 Plugin 'vim-syntastic/syntastic'
 " Syntastic settings
 set statusline+=%#warningmsg#
@@ -106,7 +106,7 @@ set hlsearch
 " move vertically by visual line
 nnoremap j gj
 nnoremap k gk
-inoremap jk <esc>
+inoremap fd <esc>
 noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
