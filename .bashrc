@@ -2,7 +2,16 @@ eval "$(fasd --init auto)"
 
 
 alias mdaly="ssh -x mdaly04@homework.cs.tufts.edu"
+
+
+
+# Aliases
+alias ll="ls -lha"
+alias l.="ls -d .*"
+alias ls="ls -GCF"
 alias ..="cd .."
+alias ...="cd ../.."
+
 
 RESET="\[\017\]"
 NORMAL="\[\033[0m\]"
