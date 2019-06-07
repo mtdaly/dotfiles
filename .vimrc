@@ -116,3 +116,5 @@ let python_highlight_all=1
 syntax on
 set laststatus=2
 set mouse=a
+
+
