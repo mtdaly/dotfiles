@@ -382,7 +382,8 @@ you should place your code here."
 
   (setq org-agenda-files (list "~/org/schedule.org"
                                "~/org/todo.org"
-                               "~/org/classes/current"))
+                               "~/org/classes/current"
+                               "~/org/mitre.org"))
 
   (setq org-refile-use-outline-path 'file)
   (setq org-refile-targets
@@ -390,7 +391,7 @@ you should place your code here."
           (org-agenda-files :maxlevel . 3)))
 
   (setq org-todo-keywords
-        '((sequence "TODO(t)" "NEXT(n)" "UPCOMING(u)" "OVERDUE(o)" "ASGNMT(a)" "|" "DONE(d)")
+        '((sequence "TODO(t)" "UPCOMING(u)" "NEXT(n)" "OVERDUE(o)" "ASGNMT(a)" "|" "DONE(d)")
           (sequence "CLASS(l)" "MEETING(m)" "EVENT(e)" "INTERN(i)" "|" "CANCELED(x)")
           (sequence "BOOK(b)" "ACQUIRED(q)" "READING(r)")))
 
