@@ -57,13 +57,12 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-let g:airline_powerline_fonts = 1
+let g:airline_symbols_ascii = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
 let g:airline_theme = 'solarized'
 Plugin 'tpope/vim-fugitive'
 Plugin 'heavenshell/vim-pydocstring'
-Plugin 'Valloric/YouCompleteMe'
 
 " Formatting
 au BufNewFile,BufRead *.py
@@ -85,6 +84,10 @@ set tabstop=8 softtabstop=4 expandtab shiftwidth=4 smarttab
 " Latex settings
 filetype plugin on
 filetype indent on
+
+set backspace=indent,eol,start
+set guifont=Consolas:h11
+map <C-n> :NERDTreeToggle<CR>
 
 " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
