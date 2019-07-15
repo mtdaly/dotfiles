@@ -9,16 +9,12 @@ call vundle#begin()
 " call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 "
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 
 " ...
-
-"" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
 
 " Split location
 set splitright
@@ -51,6 +47,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checker = ['flake8']
 
 Plugin 'nvie/vim-flake8'
+Plugin 'PProvost/vim-ps1'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'sjl/badwolf'
 Plugin 'scrooloose/nerdtree'
@@ -60,9 +57,13 @@ Plugin 'vim-airline/vim-airline-themes'
 let g:airline_symbols_ascii = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
-let g:airline_theme = 'solarized'
+let g:airline_theme = 'zenburn'
 Plugin 'tpope/vim-fugitive'
 Plugin 'heavenshell/vim-pydocstring'
+
+"" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " Formatting
 au BufNewFile,BufRead *.py
@@ -96,7 +97,8 @@ let g:tex_flavor='latex'
 
 " Color Settings
 set background=dark
-colorscheme solarized
+source ~/.vim/colors/zenburn.vim
+
 
 set nu
 set cursorline
