@@ -6,4 +6,4 @@ ln -s ~/dotfiles/.bashrc ~/.bashrc
 ln -s ~/dotfiles/liquidprompt/liquidprompt ~/.liquidprompt
 
 vim +PluginInstall +qall
-source .bashrc
+source ~/.bashrc
