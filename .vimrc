@@ -60,6 +60,7 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline_theme = 'zenburn'
 Plugin 'tpope/vim-fugitive'
 Plugin 'heavenshell/vim-pydocstring'
+Plugin 'klen/python-mode'
 
 "" All of your Plugins must be added before the following line
 call vundle#end()            " required
