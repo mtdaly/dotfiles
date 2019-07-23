@@ -11,6 +11,6 @@ alias gst="git status"
 alias ga="git add -A"
 alias gc="git commit"
 
-[[ $- = *i* ]] && source ~/.liquidprompt
+[[ $- = *i* ]] && source ~/.liquidprompt/liquidprompt
 
 
