@@ -1,9 +1,4 @@
-eval "$(fasd --init auto)"
-
-
-alias mdaly="ssh -x mdaly04@homework.cs.tufts.edu"
-
-
+alias tufts="ssh -x mdaly04@homework.cs.tufts.edu"
 
 # Aliases
 alias ll="ls -lha"
