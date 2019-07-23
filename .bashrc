@@ -1,7 +1,7 @@
 alias tufts="ssh -x mdaly04@homework.cs.tufts.edu"
 
 # Aliases
-alias ll="ls -lha"
+alias ll="ls -lhat"
 alias l.="ls -d .*"
 alias ls="ls -GCF"
 alias ..="cd .."
