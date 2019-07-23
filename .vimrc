@@ -48,8 +48,6 @@ let g:syntastic_python_checker = ['flake8']
 
 Plugin 'nvie/vim-flake8'
 Plugin 'PProvost/vim-ps1'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'sjl/badwolf'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
@@ -61,6 +59,7 @@ let g:airline_theme = 'zenburn'
 Plugin 'tpope/vim-fugitive'
 Plugin 'heavenshell/vim-pydocstring'
 Plugin 'klen/python-mode'
+Plugin 'christoomey/vim-tmux-navigator'
 
 "" All of your Plugins must be added before the following line
 call vundle#end()            " required
