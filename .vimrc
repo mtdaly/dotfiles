@@ -33,6 +33,7 @@ set foldlevel=99
 nnoremap <space> za
 
 " Plugins
+Plugin 'pearofducks/ansible-vim'
 Plugin 'tmhedberg/SimplyFold'
 Plugin 'vim-syntastic/syntastic'
 " Syntastic settings
