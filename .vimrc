@@ -61,6 +61,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'heavenshell/vim-pydocstring'
 Plugin 'klen/python-mode'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'justinmk/vim-sneak'
+let g:sneak#s_next = 1
 
 "" All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -79,13 +81,9 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
     \ set softtabstop=2
     \ set shiftwidth=2
-au BufNewFile,BufRead *.yml
-    \ set tabstop=2
-    \ set softtabstop=2
-    \ set shiftwidth=2
 
 set encoding=utf-8
-set tabstop=8 softtabstop=4 expandtab shiftwidth=4 smarttab
+set tabstop=2 softtabstop=2 expandtab shiftwidth=2 smarttab
 
 " Latex settings
 filetype plugin on
