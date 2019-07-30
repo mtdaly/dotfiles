@@ -57,7 +57,7 @@ filetype plugin indent on    " required
 
 " Default Tab Formatting
 set encoding=utf-8
-set tabstop=2 softtabstop=2 expandtab shiftwidth=2 smarttab
+set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
 
 " Font Settings
 set guifont=Consolas:h11
