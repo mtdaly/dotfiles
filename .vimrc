@@ -79,8 +79,12 @@ au BufNewFile,BufRead *.js, *.html, *.css
     \ set tabstop=2
     \ set softtabstop=2
     \ set shiftwidth=2
-set encoding=utf-8
+au BufNewFile,BufRead *.yml
+    \ set tabstop=2
+    \ set softtabstop=2
+    \ set shiftwidth=2
 
+set encoding=utf-8
 set tabstop=8 softtabstop=4 expandtab shiftwidth=4 smarttab
 
 " Latex settings
